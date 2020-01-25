@@ -214,7 +214,7 @@ public class ABVideoRangeSlider: UIView {
                                                 qos: .background,
                                                 target: nil)
             backgroundQueue.async {
-                self.thumbnailsManager.updateThumbnails(view: self,
+                let _ = self.thumbnailsManager.updateThumbnails(view: self,
                                                         videoURL: self.videoURL,
                                                         duration: self.duration)
                 self.isUpdatingThumbnails = false
